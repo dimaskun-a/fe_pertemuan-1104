@@ -20,11 +20,7 @@ function AddMovieForm(props) {
     genre: '',
   });
 
-  /**
-  * TODO
-  * - PROBLEM: 1 ERROR 1 STATE.
-  * - TODO: REFACTOR SEMUA ERROR JADI 1 STATE.
-  */
+  
   const [ErrorData, setErrorData] = useState({
     isTitleError: false,
     isDateError: false,
@@ -37,11 +33,7 @@ function AddMovieForm(props) {
     // Destructing name dan value.
     const { name, value } = e.target;
 
-    /**
-    * Mengupdate state berupa object:
-    * - Menggunakan spread operator:
-    * - Update property berdasarkan nilai name.
-    */
+    
     setFormData({
       ...formData,
       [name]: value,
